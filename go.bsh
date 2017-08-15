@@ -1,0 +1,10 @@
+#!/bin/bash
+
+OPT_JAVA_DIR=current #replace with Java directory name (jdk1.7.0_80 or jdk1.8.0_121 or whatever)
+
+exec<whichtraj
+while read line
+do
+	update-alternatives --install /usr/bin/$line $line /opt/java/$OPT_JAVA_DIR/bin/$line 2000
+	#update-alternatives --config $line #this line is only usable really when manually doing it
+done
