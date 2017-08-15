@@ -24,6 +24,11 @@ echo "Folders jdk7 and jdk8 created"
 ln -s $JAVA_DIR/jdk8 current
 echo "Created current symbolic link for default jdk8"
 
+ln -s $JAVA_DIR/current /usr/bin/current
+echo "Linked /usr/bin/current to Java Current version"
+
+cd -
+
 # Update alternatives
 exec<alt-list
 
@@ -32,7 +37,10 @@ do
   update-alternatives --install /usr/bin/$line $line /opt/java/$OPT_JAVA_DIR/bin/$line 2000
 done
 
-
+chmod a+x ./switch-java
+mv ./switch-java /usr/bin/switch-java
+echo "Moved java to /usr/bin"
+echo "Run command 'switch-java' to change Java versions."
 
 # Cleanup
 rm $JAVA_DIR/*.tar.gz
