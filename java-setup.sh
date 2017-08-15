@@ -6,6 +6,7 @@
 JAVA_DIR=/opt/java
 OPT_JAVA_DIR=current
 
+mkdir -p $JAVA_DIR
 
 echo "Copying files to ${JAVA_DIR}"
 cp ./jdk8.tar.gz $JAVA_DIR
