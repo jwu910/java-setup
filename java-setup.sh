@@ -1,9 +1,9 @@
 #!/bin/sh
 # This will install java versions 1.7 and 1.8
+# Must run in root
 
 # Directory for Java install
-# JAVA_DIR=/opt/java
-JAVA_DIR=/home/joshua/programming/liferay/misc/scripts/java-setup/opt/java
+JAVA_DIR=/opt/java
 OPT_JAVA_DIR=current
 
 
@@ -38,7 +38,7 @@ do
 done
 
 chmod a+x ./switch-java
-mv ./switch-java /usr/bin/switch-java
+cp ./switch-java /usr/bin/switch-java
 echo "Moved java to /usr/bin"
 echo "Run command 'switch-java' to change Java versions."
 
