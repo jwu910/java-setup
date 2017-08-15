@@ -1,9 +1,10 @@
-## Install Java
+## Installing Java
 
 ### Before you begin
-Get jdk7.tar.gz and jdk8.tar.gz files
+Clone repo
+Get jdk7.tar.gz and jdk8.tar.gz files and store them in local repo.
 
 ### Run the script
 ```
-java-setup.sh
+sudo bash java-setup.sh
 ```
