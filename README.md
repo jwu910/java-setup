@@ -1,5 +1,5 @@
 ## Installing Java
-Switch-java script and loop through to update alternatives written by [Jeff Sung](www.github.com/jeffcsung)
+Switch-java script and loop through to update alternatives written by [Jeff Sung](https://www.github.com/jeffcsung)
 
 ### Before you begin
 Clone repo
